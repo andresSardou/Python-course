@@ -53,3 +53,27 @@ while not at_goal():
         turn_left()
     else:
         move()
+
+# Final hurdle, 4
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+
+def corner_right():
+    turn_right()
+    move()
+
+
+while not at_goal():
+    if wall_in_front():
+        if right_is_clear():
+            corner_right()
+        else:
+            turn_left()
+    elif right_is_clear():
+        corner_right()
+    else:
+        move()
