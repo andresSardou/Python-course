@@ -54,7 +54,7 @@ while not at_goal():
     else:
         move()
 
-# Final hurdle, 4
+# hurdle, 4
 
 def turn_right():
     turn_left()
@@ -73,6 +73,32 @@ while not at_goal():
             corner_right()
         else:
             turn_left()
+    elif right_is_clear():
+        corner_right()
+    else:
+        move()
+
+# Maze
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+
+def corner_right():
+    turn_right()
+    move()
+
+
+while not at_goal():
+    if wall_in_front():
+        if right_is_clear():
+            corner_right()
+        else:
+            turn_left()
+    elif right_is_clear() and front_is_clear():
+        move()
     elif right_is_clear():
         corner_right()
     else:
