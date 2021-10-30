@@ -16,8 +16,7 @@ def corner_right():
     move()
 
 
-for x in range(0, 6):
-    if x < 6:
+for step in range(6):
         corner_left()
         turn_right()
         corner_right()
