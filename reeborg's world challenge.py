@@ -26,6 +26,7 @@ for step in range(6):
 # https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Hurdle%201&url=worlds%2Ftutorial_en%2Fhurdle1.json
 
 # Using a while loop with a for loop to complete the third hurdle
+# https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Hurdle%203&url=worlds%2Ftutorial_en%2Fhurdle3.json
 
 def turn_right():
     turn_left()
@@ -45,7 +46,7 @@ def corner_right():
 
 
 while not at_goal():
-    if wall_in_front() == True:
+    if wall_in_front():
         corner_left()
         turn_right()
         corner_right()
