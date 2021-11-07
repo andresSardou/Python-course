@@ -28,6 +28,7 @@ while "_" in display:
             display[position] = letter
     print(f"{' '.join(display)}")
 
+# Guess  not in the chosen word
     if guess not in chosen_word:
         guesses += guess
         lives -= 1
@@ -41,4 +42,3 @@ while "_" in display:
 
 if "_" not in display:
     print("You win")
-
