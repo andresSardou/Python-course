@@ -1,10 +1,7 @@
-# 🚨 Don't change the code below 👇
 print("Welcome to the Love Calculator!")
 name1 = input("What is your name? \n")
 name2 = input("What is their name? \n")
-# 🚨 Don't change the code above 👆
 
-#Write your code below this line 👇
 name_lower1 = name1.lower()
 name_lower2 = name2.lower()
 both_names = name_lower1 + name_lower2
