@@ -10,9 +10,6 @@ nr_letters = int(input("How many letters would you like in your password?\n"))
 nr_symbols = int(input(f"How many symbols would you like?\n"))  # noqa: F541
 nr_numbers = int(input(f"How many numbers would you like?\n"))  # noqa: F541
 
-# Easy Level - Order not randomised:
-# e.g. 4 letter, 2 symbol, 2 number = JduE&!91
-
 password_list = []
 for letter in range(1, nr_letters + 1):
     password_list += random.choice(letters)
@@ -30,6 +27,3 @@ for char in password_list:
 
 print(password)
 
-# print(final_password)
-#  Hard Level - Order of characters randomised:
-# e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
